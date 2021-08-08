@@ -18,7 +18,7 @@
          src="../assets/blocks.jpg">
 
     <img v-else alt="party background" class="banner-img"
-         src="../assets/tower.jpg">
+         src="../assets/sea.jpg">
   </header>
 </template>
 
@@ -144,6 +144,8 @@ export default {
       title.style.zIndex = "1";
       title.style.position = "absolute";
       title.classList.remove("frost-container");
+      title.style.textShadow = "0px 0px 5px #feb4bd";
+      title.style.color = "black";
     }
   }
 }
@@ -203,15 +205,15 @@ small {
 }
 
 @media only screen and (max-width: 940px) {
-  h1 {
-    font-size: 28px;
-    margin-top: 44%;
-  }
-
   small {
-    font-size: 15px;
+    font-size: 25px;
   }
-
 }
 
+@media only screen and (max-width: 500px ) {
+  h1 {
+    font-size: 28px;
+    margin-top: 28%;
+  }
+}
 </style>
